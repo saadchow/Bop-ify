@@ -47,16 +47,6 @@ export default function Home() {
         <MusicRecommender input={input} />
       </main>
 
-      <footer className={styles.footer}>
-        Powered by{' '}
-        <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">
-          Vercel
-        </a>{' '}
-        and{' '}
-        <a href="https://developer.spotify.com/" target="_blank" rel="noopener noreferrer">
-          Spotify
-        </a>
-      </footer>
     </div>
   )
 }
