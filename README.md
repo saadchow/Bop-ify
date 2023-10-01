@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO --> 
 <div align="center"> 
-  <h1 align="center"><a href="https://bop-ify-9kzf.vercel.app/">Bopify</a></h1> 
+  <h1 align="center">Bopify</a></h1> 
   <p align="center">Discover and enjoy personalized playlists filled with certified bops with Bopify, the ultimate music recommender app.</p> 
 </div>
 
