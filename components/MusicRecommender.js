@@ -5,9 +5,9 @@ import styles from '../styles/MusicRecommender.module.css';
 
 // A custom component that displays music recommendations
 export default function MusicRecommender({ input }) {
-  // Get the Spotify client and the Vercel AI client from the custom hooks
+  // Get the Spotify client and the OpenAI client from the custom hooks
   const spotify = useSpotify();
-  const vercelAI = useVercelAI();
+  const openai = useOpenAIAPI();
 
   // Create some state variables for storing the recommendations and the error message
   const [recommendations, setRecommendations] = useState([]);
@@ -23,8 +23,8 @@ export default function MusicRecommender({ input }) {
 
         // Check if the input is not empty
         if (input) {
-          // Use the Vercel AI client to get the music recommendation model
-          const model = await vercelAI.getModel('music-recommendation');
+          // Use the OpenAI client to get the music recommendation model
+          const model = await openai.getModel('music-recommendation');
 
           // Use the model to generate music recommendations based on the input
           const output = await model.predict(input);
@@ -55,7 +55,7 @@ export default function MusicRecommender({ input }) {
 
     // Call the async function
     fetchRecommendations();
-  }, [input, spotify, vercelAI]); // Run the effect hook whenever the input, spotify, or vercelAI changes
+  }, [input, spotify, openai]); // Run the effect hook whenever the input, spotify, or openai changes
 
   return (
     <div className={styles.container}>

@@ -24,18 +24,18 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Music Recommender</title>
+        <title>Bopify</title>
         <meta name="description" content="A streaming music recommender system built with Vercel AI SDK and Next Js" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to Music Recommender
+          Welcome to Bopify!
         </h1>
 
         <p className={styles.description}>
-          Enter a song, artist, genre, or mood to get personalized music recommendations
+          Give us a song and we will curate a personalized playlist filled with certified bops.
         </p>
 
         <div className={styles.input}>
